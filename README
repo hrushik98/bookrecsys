@@ -1,0 +1,18 @@
+There are 4 types of recommendation systems. Those are:
+
+1. Popularity Based: This type of recommendation system just displays the top most books based on some formula.
+ex: Top 50 books on Goodread
+
+2. Content Based: This type displays the books based on the user's interests. ex: if the user is into the horror genre books, the system would recommend him books of that genre.
+
+3. Collaborative Filter Recommendation System: Collaborative filtering is a technique that can filter out items that a user might like on the basis of reactions by similar users. It works by searching a large group of people and finding a smaller set of users with tastes similar to a particular user.
+
+4. Hybrid based: it's a combination of all the above three.
+----------------------------------
+
+For my project, I have implemented Popularity based and Collaborative based recommendation systems.
+
+The Popularity based recommendation system displays the top 50 books that have at least 250 votes. The top 50 books are sorted by the mean rating values.
+
+The Collaborative Filter recommendation system shows the user similar types of books. I have used the cosine similarity method from sklearn and found out the distances between the books and then sorted them by their distances and displayed the top 5 recommendations.
+
